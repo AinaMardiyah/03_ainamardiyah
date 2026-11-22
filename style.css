@@ -1,0 +1,155 @@
+/* Tampilan halaman */
+body {
+    margin: 0;
+    padding: 25px;
+    font-family: Arial, sans-serif;
+    background-color: #F8F5F0;
+    color: #514437;
+}
+
+/* Kotak form */
+.form-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px #ddd0c1;
+}
+
+/* Judul */
+h2 {
+    text-align: center;
+    color: #806A55;
+    margin-top: 0;
+}
+
+.form-instruction {
+    text-align: center;
+    color: #8B7A69;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+/* Bagian form */
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group > label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #715C49;
+}
+
+/* Input dan pilihan */
+input:not([type="radio"]):not([type="checkbox"]),
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #D8CABB;
+    border-radius: 6px;
+    background-color: #FCFAF7;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 1px solid #A68F78;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Radio dan checkbox */
+.radio-group,
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.radio-group label,
+.checkbox-group label {
+    color: #665747;
+    font-size: 14px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: #947B63;
+}
+
+/* Tombol */
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #A68F78;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #806A55;
+}
+
+/* Tabel hasil biodata */
+.result-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.result-table th,
+.result-table td {
+    padding: 12px;
+    border: 1px solid #E5DACE;
+    text-align: left;
+    overflow-wrap: anywhere;
+}
+
+.result-table th {
+    background-color: #EDE4D9;
+    color: #715C49;
+    width: 38%;
+}
+
+.result-table td {
+    background-color: #FCFAF7;
+}
+
+/* Foto hasil biodata */
+.result-table img {
+    width: 80px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* Tampilan HP */
+@media (max-width: 480px) {
+    body {
+        padding: 12px;
+    }
+
+    .form-container {
+        padding: 18px;
+    }
+
+    .result-table th,
+    .result-table td {
+        padding: 8px;
+        font-size: 12px;
+    }
+}
